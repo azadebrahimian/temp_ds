@@ -123,7 +123,16 @@ function tab1() {
             .padding([0.5])
         svg.append("g")
             .attr("transform", "translate(0," + height + ")")
-            .call(d3.axisBottom(x).tickSize(0));
+            .call(d3.axisBottom(x).tickSize(0))
+            .call((g) =>
+                g
+                  .append("text")
+                  .attr("x", width)
+                  .attr("y", margin.bottom - 4)
+                  .attr("fill", "currentColor")
+                  .attr("text-anchor", "end")
+                  .text("Event")
+            );
 
         // Add Y axis
         var y = d3.scaleLinear()
@@ -223,7 +232,16 @@ function tab2() {
             .padding([0.5])
         svg2.append("g")
             .attr("transform", "translate(0," + height + ")")
-            .call(d3.axisBottom(x).tickSize(0));
+            .call(d3.axisBottom(x).tickSize(0))
+            .call((g) =>
+                g
+                  .append("text")
+                  .attr("x", width)
+                  .attr("y", margin.bottom - 4)
+                  .attr("fill", "currentColor")
+                  .attr("text-anchor", "end")
+                  .text("Event")
+            );
 
         // Add Y axis
         var y = d3.scaleLinear()
