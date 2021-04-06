@@ -13,8 +13,9 @@ var svg = d3.select("#finalviz-two")
     .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
+// d3.csv("../csv/future_events.csv", function (data) {
 // Create dummy data
-var data = { a: 137, b: 22 }
+var data = { abc: 137, def: 22 }
 
 // set the color scale
 var color = d3.scaleOrdinal()
@@ -54,3 +55,4 @@ svg
     .attr("transform", function (d) { return "translate(" + arcGenerator.centroid(d) + ")"; })
     .style("text-anchor", "middle")
     .style("font-size", 17)
+// })
