@@ -84,7 +84,7 @@ function tab1() {
             .style("font-size", "12px")
             .style("text-anchor", "start");
 
-        y.domain([0, 80]);
+        y.domain([0, 90]);
         yAxis.call(d3.axisLeft(y));
 
         var tooltip = d3.select('#finalviz')
@@ -153,7 +153,7 @@ function tab2() {
             .style("font-size", "12px")
             .style("text-anchor", "start");
 
-        y.domain([0, 80]);
+        y.domain([0, 90]);
         yAxis.call(d3.axisLeft(y));
 
         var tooltip = d3.select('#finalviz')
