@@ -125,7 +125,7 @@ function tab1() {
             .attr("x", function (d) { return x(d.Event); })
             .attr("y", function (d) { return y(d.Yes); })
             .attr("width", x.bandwidth())
-            .attr("height", function (d) { return height - y(d.Yes); })
+            .attr("height", function (d) { return height - y(d.Yes) - 110; })
             .attr("fill", "#1277c9")
             .on("mouseover", mouseover)
             .on("mouseleave", mouseleave);
@@ -194,7 +194,7 @@ function tab2() {
             .attr("x", function (d) { return x(d.Event); })
             .attr("y", function (d) { return y(d.Yes); })
             .attr("width", x.bandwidth())
-            .attr("height", function (d) { return height - y(d.Yes); })
+            .attr("height", function (d) { return height - y(d.Yes) - 110; })
             .attr("fill", "#1277c9")
             .on("mouseover", mouseover)
             .on("mouseleave", mouseleave);
