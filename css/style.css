@@ -423,11 +423,11 @@ p a:hover {
     color: #333;
     display: none;
     font-size: 12px;
-    left: 1000px;
+    left: 1400px;
     padding: 10px;
     position: absolute;
     text-align: center;
-    top: 950px;
+    top: 350px;
     width: 80px;
     z-index: 10;
 }
@@ -438,14 +438,30 @@ p a:hover {
     color: #333;
     display: none;
     font-size: 12px;
-    left: 150px;
+    left: 75px;
     padding: 10px;
     position: absolute;
     text-align: center;
-    top: 300px;
+    top: 325px;
     z-index: 10;
 }
 
 .container {
     float: left;
+}
+
+.container-two {
+    float: right;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+}
+
+.flex-child:first-child {
+    margin-right: 20px;
 }

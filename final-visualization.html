@@ -37,13 +37,22 @@
         </ul>
     </div>
 
-    <div class="container" id="finalviz">
+    <div class="flex-container">
+
+        <div class="flex-child magenta" id="finalviz">
+            <label>Choose to view either future or past event participation data</label>
+            <button onclick="tab1()">Past</button>
+            <button onclick="tab2()">Future</button>
+        </div>
+
+        <div class="flex-child green" id="finalpie">
+        </div>
+
     </div>
-    <label>Choose to view either future or past event participation data</label>
-    <button onclick="tab1()">Past</button>
-    <button onclick="tab2()">Future</button>
-    <div class="container" id="finalpie">
-    </div>
+    <!-- <div class="container" id="finalviz">
+        </div>
+        <div class="container-two" id="finalpie">
+        </div> -->
     <!-- <div id="finalviz"></div>
     <label>Choose to view either future or past event participation data</label>
     <button onclick="tab1()">Past</button>

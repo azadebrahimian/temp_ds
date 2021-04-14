@@ -53,20 +53,20 @@ var y = d3.scaleLinear()
 var yAxis = svg.append("g")
     .attr("class", "myYaxis")
 
-var svg3 = d3.select("#finalpie")
-    .append("svg")
-    .attr("width", width)
-    .attr("height", height)
-    .append("g")
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+// var svg3 = d3.select("#finalpie")
+//     .append("svg")
+//     .attr("width", width)
+//     .attr("height", height)
+//     .append("g")
+//     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-svg3.append("text")
-    .attr("x", 420)
-    .attr("y", 0 - (margin.top / 2) - 50)
-    .attr("text-anchor", "middle")
-    .style("font-size", "30px")
-    .style("text-decoration", "underline")
-    .text("Still Connected to MPF Network?");
+// svg3.append("text")
+//     .attr("x", 420)
+//     .attr("y", 0 - (margin.top / 2) - 50)
+//     .attr("text-anchor", "middle")
+//     .style("font-size", "30px")
+//     .style("text-decoration", "underline")
+//     .text("Still Connected to MPF Network?");
 
 function tab1() {
 

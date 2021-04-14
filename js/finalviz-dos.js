@@ -1,5 +1,5 @@
-var margin = { top: 60, right: 40, bottom: 145, left: 50 },
-    width = 750 - margin.left - margin.right,
+var margin = { top: -50, right: 40, bottom: 145, left: 50 },
+    width = 600 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 var svg3 = d3.select("#finalpie")
@@ -10,15 +10,15 @@ var svg3 = d3.select("#finalpie")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 svg3.append("text")
-    .attr("x", 420)
-    .attr("y", 0 - (margin.top / 2) - 50)
+    .attr("x", 10)
+    .attr("y", -150)
     .attr("text-anchor", "middle")
     .style("font-size", "30px")
     .style("text-decoration", "underline")
     .text("Still Connected to MPF Network?");
 
 function tab3(n, tot) {
-    var radius = Math.min(450, 450) / 2 - 40
+    var radius = Math.min(350, 350) / 2 - 40
 
     // Create dummy data
     d3.csv("/csv/past_events_pie.csv", function (dataa) {
@@ -99,7 +99,7 @@ function tab3(n, tot) {
 }
 
 function tab4(n, tot) {
-    var radius = Math.min(450, 450) / 2 - 40
+    var radius = Math.min(350, 350) / 2 - 40
 
     // Create dummy data
     d3.csv("/csv/future_events_pie.csv", function (dataa) {
